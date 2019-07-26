@@ -5,6 +5,11 @@ This documentation will help you implement the Emergency System application. If 
 
 [![Get Dashboard](https://raw.githubusercontent.com/tago-io/explore-asset-tracking/master/images/getdashboard.png?raw=true)](https://admin.develop.tago.io/explore)
 
+### What you will learn
+- How to use payload parser
+- Generate reports
+- Send  notifications and emails
+
 ### Application Characteristics
 - Works with multiples devices
 - Devices must have geolocation and a help button
