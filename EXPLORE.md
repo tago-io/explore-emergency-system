@@ -1,7 +1,12 @@
 # TagoIO Emergency System
 
-This documentation will help you implement the Emergency System application. If you haven't seen this application on the button "Go to dashboard". But, if you have already seen and are interested in using this application to your own solution, read the documentation available on Github carefully and by the end of it you will have a working emergency system in your TagoIO account.
+This design demonstrates how an Asset Tracking application can be built on TagoIO.
 
+You can interact with the demo as a final user after you signup in the TagoRUN for this application by clicking on:
+
+[![Get Dashboard](https://raw.githubusercontent.com/tago-io/explore-asset-tracking/master/images/getdashboard.png?raw=true)](https://admin.develop.tago.io/explore)
+
+Or, you can get this dashboard, and follow the documentation available on Github to start customizing your solution in minutes by clicking on:
 
 [![Get Dashboard](https://raw.githubusercontent.com/tago-io/explore-asset-tracking/master/images/getdashboard.png?raw=true)](https://admin.develop.tago.io/explore)
 
@@ -10,6 +15,6 @@ This documentation will help you implement the Emergency System application. If 
 - Generate reports
 - Send  notifications and emails
 
-### Application Characteristics
-- Works with multiples devices
-- Devices must have geolocation and a help button
+### Device requirements
+For this application your device will need to send:
+- location, value from help button
