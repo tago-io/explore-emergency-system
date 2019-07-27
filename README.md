@@ -80,3 +80,5 @@ Now that you already created all necessary analyses and actions. You should also
 
 ## Scalability
 After all, you might be wondering how you could scale this application up. Everything you learned here is functional and you can use as a start point to scale it up to thousand of devices.
+
+TagoIO team. ![tagoIO.png](https://admin.tago.io/favicon-16x16.png?v=jw7PBgLGRl)
