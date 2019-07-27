@@ -15,6 +15,7 @@ Short list isn't it? This application seems complicated but it's not that much! 
 - Dashboard duplication
 - Analysis creation
 - Action creation
+- Payload parser creation
 - Tile widgets configuration
 - Report configuration
 
@@ -52,3 +53,30 @@ Emergency System analysis is the core of this application, it's where the notifi
 IMAGE HERE
 
 After that, get the code from emergencySystem.js available in Github and paste it in your analysis. With everything done, you should have the analyzes working. Now, let's create an action to run our assetLocation analysis.
+
+### Action creation
+To this application, we need to run the emergency system everytime someone needs help, currently to do that you need to create one action for each device that will be monitored. So, if you want to scale this application to 5 devices you will need to create 5 action, simple like that. The action you need to create follows a pattern and you just need to reply it to the number of devices you want. In this action we will need to run the Emergency System analysis everytime help variable is equal to 1. 
+
+- General Information tab
+  - Action to be taken: Run analysis
+  - Run the analysis: Emergency System
+- Trigger tab
+  - Variable: Help
+  - Condition: Equal to
+  - Type: Number
+  - Value: 1
+  - Lock trigger after action is taken: No
+
+The list above is the pattern you need to follow while creating the actions. If you gave different names to you analyzes or variables don't forget to use your names.
+
+### Parser Payload
+One thing we want to have in our application is the icons in maps will be set with a red color if someone is in dangerous. It needs to be fast. Also, we don't want to create analyzes or actions to such a simple process. So, we will use a payload parser. This is the best way to parse data and is a powerful tool you should use. To use a payload parser, you will need to run a custom payload parser in your device. To implement the payload parser, go to the device you want to use, after that go to Payload Parser tab. In this tab set the option "Run your own parser" as true, and paste the code from parser.js available here in github. After all, just save it and it's ready to run.
+
+## Tile widgets configuration
+If you check the Overview tab in your dashboard, you'll notice that there are three widget widgets: Details, Reports, and Alerts. These widgets should take you to the current tab that names it, for example, if you click on the widget widget called Details, it should go to the Details tab. To do this, go to the configuration of the tiles widgets, click on "User Control" and paste the link of the other tabs there. Now, your block widgets should be working and take you to other tabs.
+
+## Report configuration
+Now that you already created all necessary analyses and actions. You should also set the input form widget in Report tab to run your analysis to generate reports. To do it just click to edit this widget, go to User Control configurations and select the analysis you created to generate reports in the field "Run analysis when submitting form". After that, you'll already be able to generate reports through the dashboard. And that's it, your application should have everything working fine.
+
+## Scalability
+After all, you might be wondering how you could scale this application up. Everything you learned here is functional and you can use as a start point to scale it up to thousand of devices.
