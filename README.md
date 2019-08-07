@@ -43,14 +43,21 @@ To create this analysis you need to follow the process bellow:
 - Copy the code from generateReport.js script here in Github and paste it in your analysis.
 - Link this analysis to the input form in Reports tab
 
-Remember to enter the correct variable names in the environment variables settings:
+Remember to enter the correct variable keys and values in the environment variables settings:
 
-IMAGE HERE
+
+| Variable Key  | Variable Value         |
+| ------------- |:-------------:         |
+| device_token  | Use your master device token  |
+| account_token | Use your account token |
 
 ### Emergency System analysis
-Emergency System analysis is the core of this application, it's where the notifications will be sent and the data used in reports will be inserted. To create this analysis you need to insert the environment variables as the image bellow:
+Emergency System analysis is the core of this application, it's where the notifications will be sent and the data used in reports will be inserted. To create this analysis you need to insert the environment variables as the table bellow:
 
-IMAGE HERE
+| Variable Key  | Variable Value         |
+| ------------- |:-------------:         |
+| device_token  | Use your master device token  |
+| account_token | Use your account token |
 
 After that, get the code from emergencySystem.js available in Github and paste it in your analysis. With everything done, you should have the analyzes working. Now, let's create an action to run our assetLocation analysis.
 
