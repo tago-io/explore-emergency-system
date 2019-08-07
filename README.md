@@ -55,6 +55,7 @@ IMAGE HERE
 After that, get the code from emergencySystem.js available in Github and paste it in your analysis. With everything done, you should have the analyzes working. Now, let's create an action to run our assetLocation analysis.
 
 ### Action creation
+Now, we need to run an analysis everytime we receive location data, this requires an action. Actions are ways to run analyzes, send alerts and do other things everytime something we are tracking happens. You can check more about actions in [here](https://tago.elevio.help/en/articles/30).
 To this application, we need to run the emergency system everytime someone needs help, currently to do that you need to create one action for each device that will be monitored. So, if you want to scale this application to 5 devices you will need to create 5 action, simple like that. The action you need to create follows a pattern and you just need to reply it to the number of devices you want. In this action we will need to run the Emergency System analysis everytime help variable is equal to 1. 
 
 - General Information tab
