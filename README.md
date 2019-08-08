@@ -34,7 +34,7 @@ To setup this application you need to create two analysis: Notification Validati
 ### Notification validation analysis
 In your account, add an analysis with your name preference and configure the environment variables with your master device's token. Copy the code from the assetLocation.js script here in Github and paste it in your analysis, save it. Now, just link this analysis with the input form in Alerts tab, like the following image:
 
-IMAGE HERE
+![notificationValidation.png](/images/notificationValidation.png)
 
 ### Generate reports analysis
 To create this analysis you need to follow the process bellow:
