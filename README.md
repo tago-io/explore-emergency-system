@@ -24,7 +24,7 @@ Let's follow up the list in that order so, starting with the dashboard duplicati
 ## Dashboard Duplication 
 In the explore option in TagoIO sidebar, you will see the Emergency System example, click in the 'Get this Dashboard' button. When you do this, the emergency system dashboard will go into your account and a request to associate your devices will appear like the image bellow:
 
-IMAGE HERE IMAGE HERE IMAGE HERE IMAGE HERE
+![dashboardDuplication.png](/images/dashboardDuplication.png)
 
 Just type in the name of the device you want to use in your asset tracking application. After that, all the widgets will already be using the correct device and ready to receive your data!
 
